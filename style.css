@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'flowerregular';
+    src: url('fonts/flower-webfont.woff2') format('woff2'),
+         url('fonts/flower-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +32,47 @@ body {
   
     display: flex;
     justify-content: center;
+}
+
+.side-decoration {
+    position: relative;
+    text-align: center;
+}
+
+.side-decoration .logo {
+
+    background-color: rgb(47, 47, 48, 0.6);
+    position: absolute;
+    bottom: 66%;
+    width: 100%;
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.logo p {
+
+    font-family: 'flowerregular';
+    font-size: 80px;
+    color: wheat;
+    
+}
+
+.side-decoration .credit {
+    
+    font: italic smaller;
+    color: white;
+
+    position: absolute;
+    bottom: 8px;
+    left: 128px;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: #d52100;
 }
 
 .form {
