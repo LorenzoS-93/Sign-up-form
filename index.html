@@ -16,16 +16,17 @@
             </div>
             <figcaption class="credit">
                 Photo by <a href="https://unsplash.com/@yoksel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yoksel 🌿 Zok</a> on
-                <a href="https://unsplash.com/photos/red-flowers-with-green-leaves-4Jsp0ZzCAcY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                <a href="https://unsplash.com/photos/red-flowers-with-green-leaves-4Jsp0ZzCAcY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Unsplash</a>
             </figcaption>
         </figure>
         <form action="" method="get" class="form">
             <header class="form-header">
-                <p>This is not a real online service!
-                    You know you need something like this in your life to realise your dreams.
+                <p>This may not be a real online service but
+                    you know you need something like this in your life to realise your dreams.
                     Sign up now and get started.
                 </p>
-                <p>You <em>know</em> you want to.</p>
+                <p>You <em>know</em> you need to.</p>
             </header>
             <main class="form-body">
                 <div class="form-row">
@@ -35,16 +36,19 @@
                     <div class="form-element">
                         <label for="name">FIRST NAME</label>
                         <input type="text" id="name" name="name" required>
+                        <span></span>
                     </div>
                     <div class="form-element">
                         <label for="surname">LAST NAME</label>
                         <input type="text" id="surname" name="surname" required>
+                        <span></span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-element">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" name="email" placeholder="odin@student.com" required>
+                        <span></span>
                     </div>
                     <div class="form-element">
                         <label for="tel">PHONE NUMBER</label>
@@ -54,11 +58,19 @@
                 <div class="form-row">
                     <div class="form-element">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" 
+                            title="Min 8 char, max 10 char, must contain at least one lower case, one upper case, one number and one special character"
+                            required>
+                        <span></span>
                     </div>
                     <div class="form-element">
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm" name="confirm" required>
+                        <input type="password" id="confirm" name="confirm" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" 
+                            title="Min 8 char, max 10 char, must contain at least one lower case, one upper case, one number and one special character"
+                            required>
+                        <span></span>
                     </div>
                 </div>
             </main>
